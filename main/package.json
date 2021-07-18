@@ -1,0 +1,20 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build-with-tsc": "tsc",
+    "build-with-ts-loader": "webpack -c ./webpack.with-ts-loader.config.js",
+    "build-without-ts-loader": "webpack -c ./webpack.without-ts-loader.config.js"
+  },
+  "dependencies": {
+    "shared": "link:../shared"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.2.3",
+    "typescript": "^4.3.5",
+    "webpack": "^5.45.1",
+    "webpack-cli": "^4.7.2"
+  }
+}
